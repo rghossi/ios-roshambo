@@ -59,6 +59,18 @@ class ViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let controller = segue.destination as! ResultViewController
+        if result.isEmpty {
+            switch generateRandomPlay() {
+            case "scissors":
+                result = "It's a tie!"
+            case "rock":
+                result = "Rock crushes scissors! You lose!"
+            case "paper":
+                result = "Scissors cut paper! You win!"
+            default:
+                result = "Oops! Something went wrong!"
+            }
+        }
         controller.resultMessage = result
     }
 }

@@ -41,6 +41,9 @@
                                 <rect key="frame" x="224" y="343" width="75" height="65"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="scissors"/>
+                                <connections>
+                                    <segue destination="n3Q-dg-Qjk" kind="show" id="62W-0o-fHG"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pick one" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hfg-Ae-B1j">
                                 <rect key="frame" x="154" y="110" width="66" height="21"/>
@@ -101,4 +104,7 @@
         <image name="rock" width="75" height="65"/>
         <image name="scissors" width="75" height="65"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="fIb-Et-UU3"/>
+    </inferredMetricsTieBreakers>
 </document>

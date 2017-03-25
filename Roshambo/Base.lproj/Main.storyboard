@@ -51,6 +51,24 @@
             </objects>
             <point key="canvasLocation" x="117.59999999999999" y="123.68815592203899"/>
         </scene>
+        <!--Result View Controller-->
+        <scene sceneID="w5r-pN-dR8">
+            <objects>
+                <viewController storyboardIdentifier="ResultViewController" id="n3Q-dg-Qjk" customClass="ResultViewController" customModule="Roshambo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="WSW-2E-vu4"/>
+                        <viewControllerLayoutGuide type="bottom" id="7Np-AV-5hQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="uax-l0-Yxo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R7i-N3-gGX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="810" y="124"/>
+        </scene>
     </scenes>
     <resources>
         <image name="paper" width="75" height="65"/>

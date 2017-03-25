@@ -72,6 +72,7 @@ class ViewController: UIViewController {
             }
         }
         controller.resultMessage = result
+        result = ""
     }
 }
 

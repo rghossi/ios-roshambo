@@ -36,6 +36,9 @@ class ResultViewController: UIViewController {
         resultMessageLabel.text = resultMessage
     }
     
+    @IBAction func dismissResultView(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
     
 }
 

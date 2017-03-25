@@ -9,6 +9,8 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    var result : String = ""
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,8 +25,6 @@ class ViewController: UIViewController {
     @IBAction func rock(_ sender: Any) {
         let controller: ResultViewController
         controller = storyboard?.instantiateViewController(withIdentifier: "ResultViewController") as! ResultViewController
-        
-        var result : String
         
         switch generateRandomPlay() {
         case "rock":
@@ -41,5 +41,25 @@ class ViewController: UIViewController {
         present(controller, animated: true, completion: nil)
     }
     
+    @IBAction func paper(_ sender: Any) {
+        
+        switch generateRandomPlay() {
+        case "paper":
+            result = "It's a tie!"
+        case "rock":
+            result = "Paper covers rock! You win!"
+        case "scissors":
+            result = "Scissors cut paper! You lose!"
+        default:
+            result = "Oops! Something went wrong!"
+        }
+        
+        performSegue(withIdentifier: "paper", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let controller = segue.destination as! ResultViewController
+        controller.resultMessage = result
+    }
 }
 
